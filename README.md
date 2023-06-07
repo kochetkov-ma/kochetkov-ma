@@ -24,8 +24,8 @@ Software Development Engineer in Test - test automation, development tooling, qa
 
 Powered by [github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
 
-[![Maksim's github stats](https://github-readme-stats.vercel.app/api?username=kochetkov-ma&rank_icon=github)](https://github.com/anuraghazra/github-readme-stats)\
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kochetkov-ma&layout=compact&hide=CSS,XSLT)](https://github.com/anuraghazra/github-readme-stats)\
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=kochetkov-ma&repo=allure-server)](https://github.com/anuraghazra/github-readme-stats)
+[![Maksim's github stats](https://github-readme-stats.vercel.app/api?username=kochetkov-ma&rank_icon=github)](https://github.com/kochetkov-ma)\
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kochetkov-ma&layout=compact&hide=CSS,XSLT)](https://github.com/kochetkov-ma)\
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=kochetkov-ma&repo=allure-server)](https://github.com/kochetkov-ma/allure-server)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
