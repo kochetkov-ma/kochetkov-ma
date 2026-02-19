@@ -8,22 +8,10 @@ Currently building **AI Agents** with Claude Code SDK and configuring **local LL
 
 #### 🛠 Tech Stack
 
-**Languages:** Java, Kotlin, Groovy, Dart
+Java · Kotlin · Groovy · Dart · Spring · Gradle · Docker · GitHub Actions · Claude Code SDK · Ollama
 
-**AI & LLM:**
-![Claude Code SDK](https://img.shields.io/badge/Claude_Code_SDK-191919?style=flat&logo=anthropic&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat&logo=ollama&logoColor=white)
-![LLM](https://img.shields.io/badge/LLM_Engineering-4B0082?style=flat)
-
-**Backend & Testing:**
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat&logo=kotlin&logoColor=white)
-![Spring](https://img.shields.io/badge/Spring-6DB33F?style=flat&logo=spring&logoColor=white)
-![Gradle](https://img.shields.io/badge/Gradle-02303A?style=flat&logo=gradle&logoColor=white)
-
-**Infrastructure:**
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=github-actions&logoColor=white)
+![Claude Code SDK](https://img.shields.io/badge/Claude_Code_SDK-191919?style=flat&logo=anthropic&logoColor=white) ![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat&logo=ollama&logoColor=white) ![LLM](https://img.shields.io/badge/LLM_Engineering-4B0082?style=flat)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white) ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat&logo=kotlin&logoColor=white) ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=flat&logo=spring&logoColor=white) ![Gradle](https://img.shields.io/badge/Gradle-02303A?style=flat&logo=gradle&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=github-actions&logoColor=white)
 
 ---
 
@@ -37,13 +25,11 @@ Currently building **AI Agents** with Claude Code SDK and configuring **local LL
 
 #### 📊 Stats
 
-[![Maksim's github stats](https://github-readme-stats-sigma-five.vercel.app/api?username=kochetkov-ma&rank_icon=github&show_icons=true)](https://github.com/kochetkov-ma)
-
-[![Top Langs](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=kochetkov-ma&layout=compact&hide=CSS,XSLT)](https://github.com/kochetkov-ma)
+[![Maksim's github stats](https://github-readme-stats-sigma-five.vercel.app/api?username=kochetkov-ma&rank_icon=github&show_icons=true)](https://github.com/kochetkov-ma) [![Top Langs](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=kochetkov-ma&layout=compact&hide=CSS,XSLT)](https://github.com/kochetkov-ma)
 
 ---
 
 #### 📌 Projects
 
-[![allure-server](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=kochetkov-ma&repo=allure-server)](https://github.com/kochetkov-ma/allure-server)
 [![claude-brewcode](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=kochetkov-ma&repo=claude-brewcode)](https://github.com/kochetkov-ma/claude-brewcode)
+[![allure-server](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=kochetkov-ma&repo=allure-server)](https://github.com/kochetkov-ma/allure-server)
