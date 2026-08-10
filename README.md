@@ -26,11 +26,13 @@ Java · Kotlin · Groovy · Dart · Spring · Gradle · Docker · GitHub Actions
 
 #### 📊 Stats
 
-[![Maksim's github stats](https://github-readme-stats-sigma-five.vercel.app/api?username=kochetkov-ma&rank_icon=github&show_icons=true)](https://github.com/kochetkov-ma) [![Top Langs](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=kochetkov-ma&layout=compact&hide=CSS,XSLT)](https://github.com/kochetkov-ma)
+[![Maksim's github stats](https://github-stats-extended.vercel.app/api?username=kochetkov-ma&rank_icon=github&show_icons=true)](https://github.com/kochetkov-ma) [![Top Langs](https://github-stats-extended.vercel.app/api/top-langs/?username=kochetkov-ma&layout=compact&hide=CSS,XSLT)](https://github.com/kochetkov-ma)
 
 ---
 
 #### 📌 Projects
 
-[![claude-brewcode](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=kochetkov-ma&repo=claude-brewcode)](https://github.com/kochetkov-ma/claude-brewcode)
-[![allure-server](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=kochetkov-ma&repo=allure-server)](https://github.com/kochetkov-ma/allure-server)
+[![claude-brewcode](https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=claude-brewcode)](https://github.com/kochetkov-ma/claude-brewcode)
+[![allure-server](https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=allure-server)](https://github.com/kochetkov-ma/allure-server)
+[![kotest-allure](https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=kotest-allure)](https://github.com/kochetkov-ma/kotest-allure)
+[![koproc](https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=koproc)](https://github.com/kochetkov-ma/koproc)
