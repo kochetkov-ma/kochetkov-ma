@@ -32,7 +32,13 @@ Java · Kotlin · Groovy · Dart · Spring · Gradle · Docker · GitHub Actions
 
 #### 📌 Projects
 
-[![claude-brewcode](https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=claude-brewcode)](https://github.com/kochetkov-ma/claude-brewcode)
-[![allure-server](https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=allure-server)](https://github.com/kochetkov-ma/allure-server)
-[![kotest-allure](https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=kotest-allure)](https://github.com/kochetkov-ma/kotest-allure)
-[![koproc](https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=koproc)](https://github.com/kochetkov-ma/koproc)
+<table>
+  <tr>
+    <td><a href="https://github.com/kochetkov-ma/claude-brewcode"><img src="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=claude-brewcode" alt="claude-brewcode" width="400" height="150" /></a></td>
+    <td><a href="https://github.com/kochetkov-ma/allure-server"><img src="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=allure-server" alt="allure-server" width="400" height="150" /></a></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/kochetkov-ma/kotest-allure"><img src="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=kotest-allure" alt="kotest-allure" width="400" height="150" /></a></td>
+    <td><a href="https://github.com/kochetkov-ma/koproc"><img src="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=koproc" alt="koproc" width="400" height="150" /></a></td>
+  </tr>
+</table>
