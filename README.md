@@ -18,7 +18,7 @@ Java · Kotlin · Groovy · Dart · Spring · Gradle · Docker · GitHub Actions
 
 #### 🤖 What I'm working on
 
-- **[claude-brewcode](https://github.com/kochetkov-ma/claude-brewcode)** — Claude Code plugin for infinite task execution with automatic session handoff
+- **[claude-brewcode](https://github.com/kochetkov-ma/claude-brewcode)** — Claude Code plugin suite for development, documentation and text utility workflows
 - **[BrewPage](https://brewpage.app)** — free HTML, Markdown and file hosting with a REST API, built for AI agents
 - **[brewdoc CLI](https://github.com/kochetkov-ma/brewdoc)** — fast, deterministic document-to-Markdown conversion for agent systems, on [PyPI](https://pypi.org/project/brewdoc/)
 - **[brewcode.app](https://brewcode.app)** — tools, content and methodology for intentional AI development
