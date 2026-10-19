@@ -24,10 +24,12 @@ jobs:
       - name: Generate total-stars chart
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Optional PAT: full starred_at rebuild; unset -> append today's total.
+          STARS_TOKEN: ${{ secrets.STARS_TOKEN }}
         run: python scripts/stars_total.py
       - name: Commit changed charts
         run: |
-          git add assets/stars-total-light.svg assets/stars-total-dark.svg
+          git add assets/stars-history.json assets/stars-total-light.svg assets/stars-total-dark.svg
           # No staged diff -> nothing to commit.
           if git diff --cached --quiet; then exit 0; fi
           git config user.name "github-actions[bot]"

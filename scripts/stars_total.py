@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Total-stars-over-time chart for all owned public non-fork repos -> light/dark SVGs."""
+"""Total-stars-over-time chart for all owned public non-fork repos -> light/dark SVGs.
+STARS_TOKEN (PAT) or local gh session rebuilds history from starred_at; CI GITHUB_TOKEN appends today's total."""
 import datetime as dt
 import json
 import logging
@@ -13,6 +14,7 @@ from xml.sax.saxutils import escape
 
 USER = os.environ.get("STARS_USER", "kochetkov-ma")
 OUT = Path(__file__).resolve().parent.parent / "assets"
+HISTORY = OUT / "stars-history.json"
 API = "https://api.github.com"
 log = logging.getLogger("stars_total")
 
@@ -26,11 +28,15 @@ FONT = "-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,
 
 
 def token():
-    tok = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
-    if tok:
-        return tok
-    # Local run fallback: reuse the gh CLI session, never echo it.
-    return subprocess.run(["gh", "auth", "token"], capture_output=True, text=True, check=True).stdout.strip()
+    """-> (token, full): full=True when the token may list stargazers of every repo."""
+    if os.environ.get("STARS_TOKEN"):
+        return os.environ["STARS_TOKEN"], True
+    if os.environ.get("GITHUB_ACTIONS"):
+        # GITHUB_TOKEN gets 403 on other repos' stargazers -> totals only.
+        return os.environ["GH_TOKEN"], False
+    tok = os.environ.get("GH_TOKEN") or subprocess.run(["gh", "auth", "token"], capture_output=True, text=True,
+                                                       check=True).stdout.strip()
+    return tok, True
 
 
 def get_all(url, tok, accept="application/vnd.github+json"):
@@ -48,16 +54,30 @@ def get_all(url, tok, accept="application/vnd.github+json"):
     return items
 
 
-def collect(tok):
-    repos = [r for r in get_all(f"{API}/users/{USER}/repos?type=owner&per_page=100", tok)
-             if not r["fork"] and not r["private"]]
+def owned_repos(tok):
+    return [r for r in get_all(f"{API}/users/{USER}/repos?type=owner&per_page=100", tok)
+            if not r["fork"] and not r["private"]]
+
+
+def backfill(repos, tok):
     stamps = []
     for repo in repos:
         if repo["stargazers_count"]:
             stars = get_all(f"{API}/repos/{repo['full_name']}/stargazers?per_page=100", tok,
                             "application/vnd.github.star+json")
-            stamps.extend(dt.datetime.fromisoformat(s["starred_at"].replace("Z", "+00:00")).date() for s in stars)
-    return len(repos), sum(r["stargazers_count"] for r in repos), sorted(stamps)
+            stamps.extend(s["starred_at"][:10] for s in stars)
+    history = {}
+    for i, day in enumerate(sorted(stamps), 1):
+        history[day] = i
+    return history
+
+
+def append_today(repos):
+    history = json.loads(HISTORY.read_text(encoding="utf-8"))
+    total = sum(r["stargazers_count"] for r in repos)
+    if history[max(history)] != total:
+        history[dt.date.today().isoformat()] = total
+    return history
 
 
 def nice_step(top):
@@ -67,15 +87,17 @@ def nice_step(top):
     return 10000
 
 
-def render(theme, repo_count, stamps):
+def render(theme, repo_count, history):
     c = THEMES[theme]
-    total = len(stamps)
-    start = dt.date(stamps[0].year, 1, 1)
+    points = sorted((dt.date.fromisoformat(d), v) for d, v in history.items())
+    total = points[-1][1]
+    start = dt.date(points[0][0].year, 1, 1)
     today = dt.date.today()
     # x-axis ends at the next month start: output only changes on new stars or monthly.
     end = dt.date(today.year + today.month // 12, today.month % 12 + 1, 1)
-    step = nice_step(total)
-    ymax = -(-total // step) * step
+    peak = max(v for _, v in points)
+    step = nice_step(peak)
+    ymax = -(-peak // step) * step
     pw, ph = W - L - R, H - T - B
     span = (end - start).days
 
@@ -85,10 +107,10 @@ def render(theme, repo_count, stamps):
     def y(v):
         return T + ph * (1 - v / ymax)
 
-    # Stars landing on the same pixel column merge into one step (keeps the SVG small).
+    # Changes landing on the same pixel column merge into one step (keeps the SVG small).
     steps = {}
-    for i, d in enumerate(stamps, 1):
-        steps[round(x(d), 1)] = i
+    for d, v in points:
+        steps[round(x(d), 1)] = v
     line = f"M{x(start):.1f},{y(0):.1f}" + "".join(f"H{px:.1f}V{y(v):.1f}" for px, v in steps.items())
     last = (max(steps), y(total))
     line += f"H{x(end):.1f}"
@@ -120,15 +142,18 @@ def render(theme, repo_count, stamps):
 
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
-    repo_count, api_total, stamps = collect(token())
-    if not stamps:
+    tok, full = token()
+    repos = owned_repos(tok)
+    history = backfill(repos, tok) if full else append_today(repos)
+    api_total = sum(r["stargazers_count"] for r in repos)
+    if not history:
         sys.exit("no stargazers returned")
-    if api_total != len(stamps):
-        log.warning("stargazers_count sum %d != listed %d", api_total, len(stamps))
-    OUT.mkdir(exist_ok=True)
+    if history[max(history)] != api_total:
+        log.warning("stargazers_count sum %d != history total %d", api_total, history[max(history)])
+    HISTORY.write_text(json.dumps(history, indent=0, sort_keys=True) + "\n", encoding="utf-8")
     for theme in THEMES:
-        (OUT / f"stars-total-{theme}.svg").write_text(render(theme, repo_count, stamps), encoding="utf-8")
-    log.info("repos=%d stars=%d api_sum=%d", repo_count, len(stamps), api_total)
+        (OUT / f"stars-total-{theme}.svg").write_text(render(theme, len(repos), history), encoding="utf-8")
+    log.info("mode=%s repos=%d stars=%d", "backfill" if full else "append", len(repos), history[max(history)])
 
 
 if __name__ == "__main__":
