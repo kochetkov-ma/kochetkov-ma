@@ -101,8 +101,8 @@ Currently building **AI agents** with Claude Code and the Claude Agent SDK, and 
 #### 📊 Stats
 
 <p align="center">
-  <a href="https://github.com/kochetkov-ma"><img src="https://github-stats-extended.vercel.app/api?username=kochetkov-ma&rank_icon=github&show_icons=true" alt="Maksim's GitHub stats" height="165" /></a>
-  <a href="https://github.com/kochetkov-ma"><img src="https://github-stats-extended.vercel.app/api/top-langs/?username=kochetkov-ma&layout=compact&hide=CSS,XSLT" alt="Top languages" height="165" /></a>
+  <a href="https://github.com/kochetkov-ma"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api?username=kochetkov-ma&rank_icon=github&show_icons=true&theme=github_dark" /><img src="https://github-stats-extended.vercel.app/api?username=kochetkov-ma&rank_icon=github&show_icons=true" alt="Maksim's GitHub stats" height="165" /></picture></a>
+  <a href="https://github.com/kochetkov-ma"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/top-langs/?username=kochetkov-ma&layout=compact&hide=CSS,XSLT&theme=github_dark" /><img src="https://github-stats-extended.vercel.app/api/top-langs/?username=kochetkov-ma&layout=compact&hide=CSS,XSLT" alt="Top languages" height="165" /></picture></a>
 </p>
 
 <p align="center">
@@ -119,15 +119,15 @@ Currently building **AI agents** with Claude Code and the Claude Agent SDK, and 
 
 <table align="center">
   <tr>
-    <td><a href="https://github.com/kochetkov-ma/claude-brewcode"><img src="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=claude-brewcode" alt="claude-brewcode" width="400" height="150" /></a></td>
-    <td><a href="https://github.com/kochetkov-ma/brewdoc"><img src="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=brewdoc" alt="brewdoc" width="400" height="150" /></a></td>
+    <td><a href="https://github.com/kochetkov-ma/claude-brewcode"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=claude-brewcode&theme=github_dark" /><img src="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=claude-brewcode" alt="claude-brewcode" width="400" height="150" /></picture></a></td>
+    <td><a href="https://github.com/kochetkov-ma/brewdoc"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=brewdoc&theme=github_dark" /><img src="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=brewdoc" alt="brewdoc" width="400" height="150" /></picture></a></td>
   </tr>
   <tr>
-    <td><a href="https://github.com/kochetkov-ma/allure-server"><img src="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=allure-server" alt="allure-server" width="400" height="150" /></a></td>
-    <td><a href="https://github.com/kochetkov-ma/kotest-allure"><img src="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=kotest-allure" alt="kotest-allure" width="400" height="150" /></a></td>
+    <td><a href="https://github.com/kochetkov-ma/allure-server"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=allure-server&theme=github_dark" /><img src="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=allure-server" alt="allure-server" width="400" height="150" /></picture></a></td>
+    <td><a href="https://github.com/kochetkov-ma/kotest-allure"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=kotest-allure&theme=github_dark" /><img src="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=kotest-allure" alt="kotest-allure" width="400" height="150" /></picture></a></td>
   </tr>
   <tr>
-    <td><a href="https://github.com/kochetkov-ma/brewpage-openapi"><img src="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=brewpage-openapi" alt="brewpage-openapi" width="400" height="150" /></a></td>
-    <td><a href="https://github.com/kochetkov-ma/brewpage-action"><img src="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=brewpage-action" alt="brewpage-action" width="400" height="150" /></a></td>
+    <td><a href="https://github.com/kochetkov-ma/brewpage-openapi"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=brewpage-openapi&theme=github_dark" /><img src="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=brewpage-openapi" alt="brewpage-openapi" width="400" height="150" /></picture></a></td>
+    <td><a href="https://github.com/kochetkov-ma/brewpage-action"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=brewpage-action&theme=github_dark" /><img src="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=brewpage-action" alt="brewpage-action" width="400" height="150" /></picture></a></td>
   </tr>
 </table>
