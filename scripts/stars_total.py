@@ -6,6 +6,7 @@ import logging
 import os
 import subprocess
 import sys
+import urllib.error
 import urllib.request
 from pathlib import Path
 from xml.sax.saxutils import escape
@@ -37,10 +38,13 @@ def get_all(url, tok, accept="application/vnd.github+json"):
     while url:
         req = urllib.request.Request(url, headers={"Authorization": f"Bearer {tok}", "Accept": accept,
                                                    "X-GitHub-Api-Version": "2022-11-28", "User-Agent": USER})
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            items.extend(json.load(resp))
-            url = next((p.split(";")[0].strip(" <>") for p in resp.headers.get("Link", "").split(",")
-                        if 'rel="next"' in p), None)
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                items.extend(json.load(resp))
+                url = next((p.split(";")[0].strip(" <>") for p in resp.headers.get("Link", "").split(",")
+                            if 'rel="next"' in p), None)
+        except urllib.error.HTTPError as err:
+            sys.exit(f"GET {url} -> {err.code}: {err.read()[:300].decode(errors='replace')}")
     return items
 
 
