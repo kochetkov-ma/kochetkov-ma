@@ -102,7 +102,7 @@ Currently building **AI agents** with Claude Code and the Claude Agent SDK, and 
 
 <p align="center">
   <a href="https://github.com/kochetkov-ma"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api?username=kochetkov-ma&rank_icon=github&show_icons=true&theme=github_dark" /><img src="https://github-stats-extended.vercel.app/api?username=kochetkov-ma&rank_icon=github&show_icons=true" alt="Maksim's GitHub stats" height="165" /></picture></a>
-  <a href="https://github.com/kochetkov-ma"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/top-langs/?username=kochetkov-ma&layout=compact&hide=CSS,XSLT&theme=github_dark" /><img src="https://github-stats-extended.vercel.app/api/top-langs/?username=kochetkov-ma&layout=compact&hide=CSS,XSLT" alt="Top languages" height="165" /></picture></a>
+  <a href="https://github.com/kochetkov-ma"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/top-langs/?username=kochetkov-ma&layout=compact&hide=CSS%2CXSLT&theme=github_dark" /><img src="https://github-stats-extended.vercel.app/api/top-langs/?username=kochetkov-ma&layout=compact&hide=CSS%2CXSLT" alt="Top languages" height="165" /></picture></a>
 </p>
 
 <p align="center">
