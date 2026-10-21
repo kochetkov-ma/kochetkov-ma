@@ -17,9 +17,7 @@
   </a>
 </p>
 
-Software Development Engineer — backend, test automation, AI agents, local LLM infrastructure, team leading, CI/CD.
-
-Currently building **AI agents** with Claude Code and the Claude Agent SDK, and running **local LLMs** with Ollama.
+Software Development Engineer with a backend, test automation, team lead and CI/CD background, now focused on **AI agents and agentic systems**. I build **Claude Code plugins, workflows and multi-agent setups**, RAG pipelines and agent backends on the Claude Agent SDK, and **benchmark frontier models and agent harnesses** (Claude Code, Codex, Gemini CLI) on real engineering tasks to see which setup actually ships working code.
 
 ---
 
@@ -59,7 +57,8 @@ Currently building **AI agents** with Claude Code and the Claude Agent SDK, and 
       <img src="https://img.shields.io/badge/Claude_Code-D97757?style=flat&logo=claude&logoColor=white" alt="Claude Code" />
       <img src="https://img.shields.io/badge/Claude_Agent_SDK-191919?style=flat&logo=anthropic&logoColor=white" alt="Claude Agent SDK" />
       <img src="https://img.shields.io/badge/OpenAI_Codex-000000?style=flat&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIuNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNNCA2LjVsNS41IDUuNUw0IDE3LjVNMTIuNSAxOGg3LjUiLz48L3N2Zz4%3D" alt="OpenAI Codex" />
-      <img src="https://img.shields.io/badge/Ollama-000000?style=flat&logo=ollama&logoColor=white" alt="Ollama" />
+      <img src="https://img.shields.io/badge/Gemini_CLI-8E75B2?style=flat&logo=googlegemini&logoColor=white" alt="Gemini CLI" />
+      <img src="https://img.shields.io/badge/RAG-4B0082?style=flat" alt="RAG" />
       <img src="https://img.shields.io/badge/LLM_Engineering-4B0082?style=flat" alt="LLM Engineering" />
     </td>
   </tr>
@@ -117,17 +116,11 @@ Currently building **AI agents** with Claude Code and the Claude Agent SDK, and 
 
 #### 📌 Projects
 
-<table align="center">
-  <tr>
-    <td><a href="https://github.com/kochetkov-ma/claude-brewcode"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=claude-brewcode&theme=github_dark" /><img src="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=claude-brewcode" alt="claude-brewcode" width="400" height="150" /></picture></a></td>
-    <td><a href="https://github.com/kochetkov-ma/brewdoc"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=brewdoc&theme=github_dark" /><img src="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=brewdoc" alt="brewdoc" width="400" height="150" /></picture></a></td>
-  </tr>
-  <tr>
-    <td><a href="https://github.com/kochetkov-ma/allure-server"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=allure-server&theme=github_dark" /><img src="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=allure-server" alt="allure-server" width="400" height="150" /></picture></a></td>
-    <td><a href="https://github.com/kochetkov-ma/kotest-allure"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=kotest-allure&theme=github_dark" /><img src="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=kotest-allure" alt="kotest-allure" width="400" height="150" /></picture></a></td>
-  </tr>
-  <tr>
-    <td><a href="https://github.com/kochetkov-ma/brewpage-openapi"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=brewpage-openapi&theme=github_dark" /><img src="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=brewpage-openapi" alt="brewpage-openapi" width="400" height="150" /></picture></a></td>
-    <td><a href="https://github.com/kochetkov-ma/brewpage-action"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=brewpage-action&theme=github_dark" /><img src="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=brewpage-action" alt="brewpage-action" width="400" height="150" /></picture></a></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="https://github.com/kochetkov-ma/claude-brewcode"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=claude-brewcode&theme=github_dark" /><img src="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=claude-brewcode" alt="claude-brewcode" width="49%" /></picture></a>
+  <a href="https://github.com/kochetkov-ma/brewdoc"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=brewdoc&theme=github_dark" /><img src="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=brewdoc" alt="brewdoc" width="49%" /></picture></a>
+  <a href="https://github.com/kochetkov-ma/allure-server"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=allure-server&theme=github_dark" /><img src="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=allure-server" alt="allure-server" width="49%" /></picture></a>
+  <a href="https://github.com/kochetkov-ma/kotest-allure"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=kotest-allure&theme=github_dark" /><img src="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=kotest-allure" alt="kotest-allure" width="49%" /></picture></a>
+  <a href="https://github.com/kochetkov-ma/brewpage-openapi"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=brewpage-openapi&theme=github_dark" /><img src="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=brewpage-openapi" alt="brewpage-openapi" width="49%" /></picture></a>
+  <a href="https://github.com/kochetkov-ma/brewpage-action"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=brewpage-action&theme=github_dark" /><img src="https://github-stats-extended.vercel.app/api/pin/?username=kochetkov-ma&repo=brewpage-action" alt="brewpage-action" width="49%" /></picture></a>
+</p>
